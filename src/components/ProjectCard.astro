@@ -1,0 +1,34 @@
+---
+interface Props {
+  title: string
+  about: string
+  imgUrl: string
+  ghUrl: string
+  alignRight: boolean
+}
+
+const { title, about, ghUrl, imgUrl, alignRight } = Astro.props
+---
+
+<li>
+  {
+    !alignRight && (
+      <div class="cardImg">
+        <img src={imgUrl} alt="Project image" />
+      </div>
+    )
+  }
+
+  <div class="cardBody">
+    <h3><a href={ghUrl}>{title}</a></h3>
+    <p>{about}</p>
+  </div>
+
+  {
+    alignRight && (
+      <div class="cardImg">
+        <a href={ghUrl}><img src={imgUrl} alt="Project image" /></a>
+      </div>
+    )
+  }
+</li>
