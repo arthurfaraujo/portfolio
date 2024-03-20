@@ -18,33 +18,18 @@ import Card from '../components/ProjectCard.astro'
     <ul class="projectsList">
       <Card
         title="Brechó Virtual"
-        about="Little e-commerce project that i created, used as a final project for the course I was taking."
+        about="Little e-commerce project that i created, used as a final project for the course I was taking. It implement JWT, secured routes, cookies, a real PostgreSQL database and a basic CRUD."
+        imgUrl="https://imgur.com/LvFab9x.jpeg"
+        ghUrl="https://github.com/arthurfaraujo/brecho-virtual"
+        alignRight={true}
+      />
+      <Card
+        title="Brechó Virtual"
+        about="Little e-commerce project that i created, used as a final project for the course I was taking. It implement JWT, secured routes, cookies, a real PostgreSQL database and a basic CRUD."
         imgUrl="https://imgur.com/LvFab9x.jpeg"
         ghUrl="https://github.com/arthurfaraujo/brecho-virtual"
         alignRight={true}
       />
     </ul>
   </main>
-
-  <style>
-    .container {
-      width: 100%;
-      height: 20rem;
-      display: flex;
-      padding-left: 20%;
-      align-items: center;
-      /* background-color: aqua; */
-    }
-
-    .about {
-      max-width: 25rem;
-      display: flex;
-      flex-flow: column;
-      gap: 0.5rem;
-    }
-
-    .about > p {
-      font-size: 1.2rem;
-    }
-  </style>
 </Layout>
