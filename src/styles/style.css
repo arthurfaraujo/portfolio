@@ -73,21 +73,27 @@ a {
 
 .card {
   width: 100%;
+  max-height: 25rem;
   display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: center;
+  flex-flow: row;
+  /* justify-content: center; */
   gap: 2rem;
   color: #000;
   background-color: #fffcf9;
   padding: 2rem;
 }
 
+.cardBody {
+  width: 50%;
+}
+
 .cardImg {
-  width: 200%;
+  width: 100%;
+  border: 1px dotted black;
 }
 
 .cardImg img {
   width: 100%;
-  object-fit: fill;
-  object-position: top left;
+  /* object-fit: fill; */
+  /* object-position: top left; */
 }
